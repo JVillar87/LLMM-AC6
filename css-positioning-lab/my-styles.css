@@ -1,0 +1,342 @@
+/* Your Stylesheet */
+
+#display-01 div {
+    display: inline-block;
+    border: 1px solid blue;
+    margin-right: 20px;
+}
+
+#position-01 div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: inline-block;
+    position: relative;
+    margin: 5px;
+}
+
+#position-01 div:nth-child(even) {
+    left: 50px;
+}
+
+#display-02 span {
+    display: block;
+    border: 1px solid red;
+    width: 100%;
+}
+
+#display-03 div {
+    display: inline-block;
+    border: 1px solid green;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+#display-04 div:nth-of-type(1) {
+    display: none;
+}
+
+#display-04 div:nth-of-type(2) {
+    display: block;
+}
+
+#display-05 a {
+    display: block;
+    width: 50%;
+    background: lightgrey;
+    text-align: left;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#boxmodel-01 div {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 15px solid black;
+}
+
+#boxmodel-02 div {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 15px solid black;
+    box-sizing: border-box;
+}
+
+#float-01 img {
+
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+#float-02 img {
+
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+#float-02 p {
+    text-align: justify;
+}
+
+#float-03 img {
+    float: left;
+    margin: 10px;
+}
+
+
+#float-03 .clear {
+    clear: both;
+}
+
+#float-04 img {
+    float: left;
+    margin: 10px;
+}
+
+#float-04 div {
+    background: lightblue;
+    padding: 10px;
+}
+
+#float-04 div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#float-05 p {
+    float: left;
+    width: 45%;
+    padding: 2%;
+    border-right: 1px solid gray;
+    text-align: justify;
+}
+
+#float-05 p:last-child {
+    border-right: none;
+}
+
+
+
+#float-06 div {
+    padding: 10px;
+
+
+}
+
+#float-06 div p {
+    float: left;
+    width: 45%;
+    padding: 2%;
+    border-right: 1px solid gray;
+    text-align: justify;
+
+}
+
+#float-06 div p:last-child {
+    border-right: none;
+}
+
+#float-06 div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#position-01 div {
+    width: 50px;
+    height: 50px;
+    background: red;
+    display: block;
+    position: relative;
+    margin: 5px;
+}
+
+#position-01 div:nth-child(odd) {
+    top: 20px;
+}
+
+#position-02 div {
+    border: 1px solid black;
+}
+
+#position-02 span {
+    position: absolute;
+}
+
+#position-02 span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+#position-02 span:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
+#position-02 span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+}
+
+#position-02 span:nth-child(4) {
+    bottom: 0;
+    left: 0;
+}
+
+#position-03 div {
+    border: 1px solid black;
+    height: 100px;
+    position: relative;
+}
+
+#position-03 span {
+    position: absolute;
+}
+
+#position-03 span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+#position-03 span:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
+#position-03 span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+}
+
+#position-03 span:nth-child(4) {
+    bottom: 0;
+    left: 0;
+}
+
+
+#position-04>div {
+
+    position: absolute;
+    top: -650rem;
+    /*No sé si es lo que buscabas, pero solo pude conseguirlo así*/
+    /*Ni el box sizing: Content-box, ni border-box me hacían nada*/
+    /*No entiendo qué hago mal.*/
+    /*Lloro fuerte*/
+
+}
+
+#position-05 .outer-box {
+    width: 4rem;
+    height: 4rem;
+    background: lightgray;
+    position: absolute;
+}
+
+#position-05 .outer-box:first-child {
+    left: 0;
+    top: 0;
+}
+
+#position-05 .outer-box:last-child {
+    right: 0;
+    top: 0;
+}
+
+#position-05 .inner-box {
+    width: 1rem;
+    height: 1rem;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#position-06 div {
+    background: lavender;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#position-07 a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0a7a79;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+#position-07 a:hover {
+    background: #c47ff3;
+}
+
+#wrapper {
+    width: 100%;
+    background: cyan;
+}
+
+nav {
+    background-color: #33db3b;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #33db3b;
+    color: white;
+}
+
+nav a:hover {
+    background: #3ea157;
+    color: white;
+}
+
+
+aside {
+    display: block;
+    float: right;
+    width: 25%;
+    position: absolute;
+    bottom: 35%;
+    left: 65%;
+    background: #d8815e;
+    padding: 2rem;
+}
+
+aside p {
+    width: 100%;
+    color: white;
+}
+
+
+main {
+    float: center;
+    width: 58%;
+    padding: 3em;
+    background-color: white;
+}
+
+main p {
+    width: 100%;
+
+
+}
+
+
+footer {
+    clear: both;
+    background: #ee4cab;
+    text-align: left;
+    padding: 1rem;
+}
+
+/* All your edits should go here */
