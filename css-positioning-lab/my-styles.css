@@ -3,20 +3,7 @@
 #display-01 div {
     display: inline-block;
     border: 1px solid blue;
-    margin-right: 20px;
-}
-
-#position-01 div {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    display: inline-block;
-    position: relative;
-    margin: 5px;
-}
-
-#position-01 div:nth-child(even) {
-    left: 50px;
+    margin: 20px;
 }
 
 #display-02 span {
@@ -30,22 +17,17 @@
     border: 1px solid green;
     width: 50px;
     height: 50px;
-    margin-right: 20px;
+
 }
 
-#display-04 div:nth-of-type(1) {
+#display-04 div:first-child {
     display: none;
-}
-
-#display-04 div:nth-of-type(2) {
-    display: block;
 }
 
 #display-05 a {
     display: block;
     width: 50%;
     background: lightgrey;
-    text-align: left;
     padding: 10px;
     margin: 0 auto;
 }
@@ -148,15 +130,13 @@
 
 #position-01 div {
     width: 50px;
-    height: 50px;
-    background: red;
-    display: block;
-    position: relative;
-    margin: 5px;
+    aspect-ratio: 1;
+    background-color: red;
 }
 
-#position-01 div:nth-child(odd) {
-    top: 20px;
+#position-01 div:nth-child(even) {
+    position: relative;
+    left: 50px;
 }
 
 #position-02 div {
@@ -218,16 +198,15 @@
 }
 
 
-#position-04>div {
-
+#position-04 div {
     position: absolute;
     top: -650rem;
-    /*No sé si es lo que buscabas, pero solo pude conseguirlo así*/
-    /*Ni el box sizing: Content-box, ni border-box me hacían nada*/
-    /*No entiendo qué hago mal.*/
-    /*Lloro fuerte*/
 
 }
+
+/*Lloro fuerte, el static no funciona*/
+/*Solo lo he conseguido así, perdón si no encaja bien en tu pantalla*/
+
 
 #position-05 .outer-box {
     width: 4rem;
